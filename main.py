@@ -45,7 +45,7 @@ def check_ticker(ticker):
     volume = df["v"].sum()
     if volume < VOLUME_MIN:
         return
-    msg = f"📈 {ticker} вырос на {change:.2f}% за 10 мин
+    msg = f"📈 {ticker} вырос на {change:.2f}% за 10 минут"
 Цена: ${end:.2f}, Объём: {int(volume):,}"
     bot.send_message(chat_id=TELEGRAM_CHAT_ID, text=msg)
 
