@@ -50,6 +50,7 @@ def check_ticker(ticker):
     bot.send_message(chat_id=TELEGRAM_CHAT_ID, text=msg)
 
 if __name__ == "__main__":
+    bot.send_message(chat_id=TELEGRAM_CHAT_ID, text="✅ Облачный бот успешно запущен и готов к работе!")
     while True:
         for ticker in TICKERS:
             try:
