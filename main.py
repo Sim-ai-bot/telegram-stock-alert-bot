@@ -46,7 +46,7 @@ def check_ticker(ticker):
     if volume < VOLUME_MIN:
         return
     msg = f"📈 {ticker} вырос на {change:.2f}% за 10 минут"
-Цена: ${end:.2f}, Объём: {int(volume):,}"
+msg = f"📈 {ticker} вырос на {change:.2f}% за 10 минут\nЦена: ${end:.2f}, Объём: {int(volume):,}"
     bot.send_message(chat_id=TELEGRAM_CHAT_ID, text=msg)
 
 if __name__ == "__main__":
